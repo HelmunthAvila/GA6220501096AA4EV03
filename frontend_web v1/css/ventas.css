@@ -1,0 +1,101 @@
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f6fa;
+}
+
+.container{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:230px;
+background:#4b2ea7;
+color:white;
+padding:20px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:12px;
+border-radius:6px;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+}
+
+.sidebar li:hover{
+background:rgba(255,255,255,0.2);
+}
+
+.active{
+background:rgba(255,255,255,0.3);
+}
+
+/* CONTENIDO */
+
+.main-content{
+flex:1;
+padding:20px;
+}
+
+/* CONTENEDOR VENTAS */
+
+.ventas-container{
+display:flex;
+gap:30px;
+margin-top:20px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+flex:1;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+/* CARRITO */
+
+.carrito{
+flex:1;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+/* TABLAS */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+button{
+background:#5b3cc4;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#3f2aa0;
+}

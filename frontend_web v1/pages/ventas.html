@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amatista SGI - Ventas</title>
+
+<link rel="stylesheet" href="../css/ventas.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<h2>Amatista</h2>
+
+<ul>
+
+<!-- Dashboard: muestra indicadores generales del sistema -->
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<!-- Inventario: administración de productos -->
+<li><a href="inventario.html">Inventario</a></li>
+
+<!-- Ventas: registro de ventas -->
+<li class="active"><a href="ventas.html">Ventas</a></li>
+
+<!-- Reportes: generación de estadísticas -->
+<li><a href="reportes.html">Reportes</a></li>
+
+<!-- Usuarios: administración de usuarios -->
+<li><a href="usuarios.html">Usuarios</a></li>
+
+</ul>
+
+</aside>
+
+
+<!-- CONTENIDO -->
+<main class="main-content">
+
+<h2>Registro de Ventas</h2>
+
+
+<!-- LISTA DE PRODUCTOS -->
+<div class="ventas-container">
+
+<div class="productos">
+
+<h3>Productos disponibles</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Acción</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Teclado</td>
+<td>45000</td>
+<td><button onclick="agregarProducto('Teclado',45000)">Agregar</button></td>
+</tr>
+
+<tr>
+<td>Mouse</td>
+<td>30000</td>
+<td><button onclick="agregarProducto('Mouse',30000)">Agregar</button></td>
+</tr>
+
+<tr>
+<td>Monitor</td>
+<td>600000</td>
+<td><button onclick="agregarProducto('Monitor',600000)">Agregar</button></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<!-- CARRITO -->
+<div class="carrito">
+
+<h3>Carrito de venta</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Eliminar</th>
+</tr>
+</thead>
+
+<tbody id="listaCarrito">
+
+</tbody>
+
+</table>
+
+<h3>Total: $ <span id="total">0</span></h3>
+
+<button onclick="registrarVenta()">Registrar venta</button>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/ventas.js"></script>
+
+</body>
+</html>

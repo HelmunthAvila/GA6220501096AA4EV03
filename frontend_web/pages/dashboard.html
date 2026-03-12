@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amatista SGI - Dashboard</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<h2>Amatista</h2>
+
+<ul>
+
+<!-- Dashboard: muestra indicadores generales del sistema -->
+<li class="active">
+<a href="dashboard.html">Dashboard</a>
+</li>
+
+<!-- Inventario: administración de productos y control de stock -->
+<li>
+<a href="inventario.html">Inventario</a>
+</li>
+
+<!-- Ventas: registro de ventas realizadas -->
+<li>
+<a href="ventas.html">Ventas</a>
+</li>
+
+<!-- Reportes: generación de estadísticas del sistema -->
+<li>
+<a href="reportes.html">Reportes</a>
+</li>
+
+<!-- Usuarios: administración de usuarios -->
+<li>
+<a href="usuarios.html">Usuarios</a>
+</li>
+
+</ul>
+
+</aside>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="main-content">
+
+<header class="topbar">
+
+<input type="text" placeholder="Buscar en el sistema">
+
+<div class="user">
+Helmunth Avila
+</div>
+
+</header>
+
+
+<!-- TARJETAS DE INDICADORES -->
+<section class="cards">
+
+<div class="card">
+<h3>Productos en inventario</h3>
+<p>1.248</p>
+</div>
+
+<div class="card">
+<h3>Ventas realizadas</h3>
+<p>17</p>
+</div>
+
+<div class="card">
+<h3>Productos bajo stock</h3>
+<p>8</p>
+</div>
+
+<div class="card">
+<h3>Ingresos del día</h3>
+<p>$145.283</p>
+</div>
+
+</section>
+
+
+<!-- RESUMEN FINANCIERO -->
+<section class="summary">
+
+<div class="summary-card">
+<h4>Ventas del mes</h4>
+<p>$12.450.000</p>
+</div>
+
+<div class="summary-card">
+<h4>Egresos</h4>
+<p>$1.167.248</p>
+</div>
+
+</section>
+
+
+<!-- ACCIONES RAPIDAS -->
+<section class="actions">
+
+<h3>Acciones rápidas</h3>
+
+<button onclick="irInventario()">Registrar producto</button>
+
+<button onclick="irVentas()">Registrar venta</button>
+
+<button onclick="irReportes()">Generar reportes</button>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

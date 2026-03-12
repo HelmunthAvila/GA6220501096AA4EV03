@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amatista SGI - Reportes</title>
+
+<link rel="stylesheet" href="../css/reportes.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<h2>Amatista</h2>
+
+<ul>
+
+<!-- Dashboard: muestra indicadores generales del sistema -->
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<!-- Inventario: administración de productos -->
+<li><a href="inventario.html">Inventario</a></li>
+
+<!-- Ventas: registro de ventas -->
+<li><a href="ventas.html">Ventas</a></li>
+
+<!-- Reportes: análisis y estadísticas -->
+<li class="active"><a href="reportes.html">Reportes</a></li>
+
+<!-- Usuarios: administración de usuarios -->
+<li><a href="usuarios.html">Usuarios</a></li>
+
+</ul>
+
+</aside>
+
+
+<!-- CONTENIDO -->
+<main class="main-content">
+
+<h2>Panel de Reportes</h2>
+
+
+<!-- INDICADORES -->
+<section class="indicadores">
+
+<div class="card">
+<h3>Ventas del día</h3>
+<p>$350.000</p>
+</div>
+
+<div class="card">
+<h3>Ventas del mes</h3>
+<p>$12.450.000</p>
+</div>
+
+<div class="card">
+<h3>Productos vendidos</h3>
+<p>148</p>
+</div>
+
+<div class="card">
+<h3>Clientes atendidos</h3>
+<p>62</p>
+</div>
+
+</section>
+
+
+<!-- GRAFICAS -->
+<section class="graficas">
+
+<div class="grafica">
+<h3>Ventas por mes</h3>
+<canvas id="ventasMes"></canvas>
+</div>
+
+<div class="grafica">
+<h3>Productos vendidos</h3>
+<canvas id="productosVendidos"></canvas>
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/reportes.js"></script>
+
+</body>
+</html>

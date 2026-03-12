@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amatista SGI - Inventario</title>
+
+<link rel="stylesheet" href="../css/inventario.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<h2>Amatista</h2>
+
+<ul>
+
+<!-- Dashboard: muestra indicadores generales del sistema -->
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<!-- Inventario: administración de productos y control de stock -->
+<li class="active"><a href="inventario.html">Inventario</a></li>
+
+<!-- Ventas: registro de ventas realizadas -->
+<li><a href="ventas.html">Ventas</a></li>
+
+<!-- Reportes: generación de estadísticas -->
+<li><a href="reportes.html">Reportes</a></li>
+
+<!-- Usuarios: administración de usuarios -->
+<li><a href="usuarios.html">Usuarios</a></li>
+
+</ul>
+
+</aside>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="main-content">
+
+<header class="topbar">
+
+<h2>Gestión de Inventario</h2>
+
+<div class="acciones">
+
+<input type="text" id="buscarProducto" placeholder="Buscar producto">
+
+<button onclick="abrirFormulario()">Agregar producto</button>
+
+</div>
+
+</header>
+
+
+<!-- TABLA DE PRODUCTOS -->
+<table>
+
+<thead>
+
+<tr>
+<th>Código</th>
+<th>Producto</th>
+<th>Categoría</th>
+<th>Stock</th>
+<th>Precio</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaProductos">
+
+<tr>
+<td>P001</td>
+<td>Teclado</td>
+<td>Periféricos</td>
+<td>25</td>
+<td>45000</td>
+<td>
+<button onclick="editarProducto()">Editar</button>
+<button onclick="eliminarProducto(this)">Eliminar</button>
+</td>
+</tr>
+
+<tr>
+<td>P002</td>
+<td>Mouse</td>
+<td>Periféricos</td>
+<td>30</td>
+<td>30000</td>
+<td>
+<button onclick="editarProducto()">Editar</button>
+<button onclick="eliminarProducto(this)">Eliminar</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
+
+</div>
+
+<script src="../js/inventario.js"></script>
+
+</body>
+</html>

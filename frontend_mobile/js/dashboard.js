@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-console.log("Sistema Amatista cargado");
+console.log("Dashboard cargado");
 
 });

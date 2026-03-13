@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Búsqueda de productos</title>
+<title>Alertas de stock</title>
 <link rel="icon" type="image/x-icon" href="../img/logo.ico">
 <link rel="stylesheet" href="../css/mobile.css">
 
@@ -22,7 +22,7 @@
 <img src="../img/logo.png" class="logo">
 
 <div class="header-text">
-<h2>Búsqueda de productos</h2>
+<h2>Alertas de stock</h2>
 <p>Bienvenido, Helmunth Avila</p>
 <small>(Rol administrador)</small>
 </div>
@@ -45,21 +45,20 @@
 
 <main class="list-container">
 
-<!-- RESULTADO -->
+<!-- ALERTA -->
 
 <div class="user-card">
 
 <div class="user-info">
 <p><strong>Nombre</strong> Producto A</p>
 <p><strong>Referencia</strong> SKU0001</p>
-<p><strong>Stock</strong> 45</p>
+<p><strong>Stock actual</strong> 45</p>
 <p><strong>Stock mínimo</strong> 5</p>
+<p><strong>Estado</strong> Activo</p>
 </div>
 
 <div class="actions">
-<button>✏️</button>
-<button>👁</button>
-<button>🗑</button>
+<button>↺</button>
 </div>
 
 </div>
@@ -69,14 +68,13 @@
 <div class="user-info">
 <p><strong>Nombre</strong> Producto B</p>
 <p><strong>Referencia</strong> SKU0002</p>
-<p><strong>Stock</strong> 12</p>
-<p><strong>Stock mínimo</strong> 3</p>
+<p><strong>Stock actual</strong> 3</p>
+<p><strong>Stock mínimo</strong> 5</p>
+<p><strong>Estado</strong> Bajo stock</p>
 </div>
 
 <div class="actions">
-<button>✏️</button>
-<button>👁</button>
-<button>🗑</button>
+<button>↺</button>
 </div>
 
 </div>
@@ -86,14 +84,13 @@
 <div class="user-info">
 <p><strong>Nombre</strong> Producto C</p>
 <p><strong>Referencia</strong> SKU0003</p>
-<p><strong>Stock</strong> 8</p>
-<p><strong>Stock mínimo</strong> 4</p>
+<p><strong>Stock actual</strong> 2</p>
+<p><strong>Stock mínimo</strong> 5</p>
+<p><strong>Estado</strong> Bajo stock</p>
 </div>
 
 <div class="actions">
-<button>✏️</button>
-<button>👁</button>
-<button>🗑</button>
+<button>↺</button>
 </div>
 
 </div>
@@ -103,7 +100,7 @@
 <div class="button-container">
 
 <button class="btn-primary">
-Búsqueda avanzada
+Generar reporte
 </button>
 
 </div>

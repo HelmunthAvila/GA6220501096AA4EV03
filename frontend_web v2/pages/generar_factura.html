@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gestión de ventas</title>
+<title>Generar Factura</title>
 
 <link rel="stylesheet" href="../assets/css/style.css">
-<link rel="stylesheet" href="../assets/css/ventas.css">
+<link rel="stylesheet" href="../assets/css/factura.css">
 
 </head>
 
@@ -29,8 +29,8 @@
 
 <a href="productos.html">Gestión de productos</a>
 <a href="inventario.html">Control de inventario</a>
-<a href="ventas.html" class="active">Gestión de ventas</a>
-<a href="facturas.html">Generación de facturas</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html" class="active">Generación de facturas</a>
 <a href="busqueda.html">Búsqueda de productos</a>
 <a href="reportes.html">Reportes</a>
 <a href="alertas.html">Alertas de stock mínimo</a>
@@ -48,7 +48,7 @@
 
 <header>
 
-<h2>Gestión de ventas</h2>
+<h2>Gestión de ventas / Generar factura</h2>
 
 <div class="user">
 
@@ -63,21 +63,31 @@
 
 </header>
 
-<!-- BUSCADOR -->
+<section class="factura-container">
 
-<section class="buscador">
+<!-- CLIENTE -->
 
-<input type="text" placeholder="Search Cliente">
+<div class="cliente">
 
-<select>
-<option>Nombre</option>
-</select>
+<h3>Datos del Cliente</h3>
 
-</section>
+<input type="text" placeholder="Número">
+<input type="text" placeholder="Nombre">
+<input type="text" placeholder="Dirección">
+<input type="text" placeholder="Teléfono">
 
-<!-- TABLA VENTAS -->
+<textarea placeholder="Observación"></textarea>
 
-<section class="tabla">
+<button class="btn">Registrar Cliente</button>
+
+</div>
+
+
+<!-- ITEMS -->
+
+<div class="items">
+
+<h3>Item a facturar</h3>
 
 <table>
 
@@ -89,12 +99,12 @@
 <th>Cantidad</th>
 <th>Precio</th>
 <th>Subtotal</th>
-<th>Acciones</th>
+<th></th>
 </tr>
 
 </thead>
 
-<tbody id="tablaVentas">
+<tbody id="tablaFactura">
 
 <tr>
 
@@ -104,9 +114,7 @@
 <td>32500</td>
 <td class="subtotal">32500</td>
 
-<td class="acciones">
-<button onclick="editar()">✏️</button>
-<button onclick="ver()">👁️</button>
+<td>
 <button onclick="eliminar()">🗑️</button>
 </td>
 
@@ -120,9 +128,7 @@
 <td>32500</td>
 <td class="subtotal">65000</td>
 
-<td class="acciones">
-<button onclick="editar()">✏️</button>
-<button onclick="ver()">👁️</button>
+<td>
 <button onclick="eliminar()">🗑️</button>
 </td>
 
@@ -132,33 +138,51 @@
 
 </table>
 
-</section>
-
 <!-- TOTALES -->
 
-<section class="totales">
+<div class="totales">
 
 <input type="number" id="descuento" placeholder="Descuento (%)">
 <input type="number" id="iva" placeholder="Impuesto IVA">
-
 <input type="text" id="total" placeholder="Total a pagar" readonly>
 
-</section>
+</div>
 
-<div class="acciones-final">
+<!-- METODO PAGO -->
 
-<button class="factura"
-onclick="location.href='generar_factura.html'">
-Generar factura
+<div class="pago">
+
+<h4>Método de pago</h4>
+
+<label>
+<input type="radio" name="pago">
+Contado
+</label>
+
+<label>
+<input type="radio" name="pago">
+Crédito
+</label>
+
+<input type="text" placeholder="Plazo">
+
+</div>
+
+<textarea placeholder="Observación"></textarea>
+
+<button class="btn factura">
+Generar e imprimir factura
 </button>
 
 </div>
+
+</section>
 
 </main>
 
 </div>
 
-<script src="../assets/js/ventas.js"></script>
+<script src="../assets/js/factura.js"></script>
 
 </body>
 </html>

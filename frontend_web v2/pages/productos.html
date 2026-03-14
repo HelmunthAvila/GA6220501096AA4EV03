@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gestión de productos - Amatista SGI</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/productos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html" class="active">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html">Reportes</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- CONTENIDO -->
+
+<main class="main">
+
+<header>
+
+<h2>Gestión de productos</h2>
+
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Search">
+
+<select>
+<option>Estado</option>
+<option>Activo</option>
+<option>Agotado</option>
+</select>
+
+<button class="nuevo">Nuevo Producto</button>
+
+</section>
+
+<!-- TABLA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Referencia</th>
+<th>Stock</th>
+<th>Precio</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Producto A</td>
+<td>SKU0001</td>
+<td>45</td>
+<td>$32.500</td>
+
+<td>
+<span class="estado activo">
+Activo
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+<tr>
+<td>Producto B</td>
+<td>SKU0002</td>
+<td>03</td>
+<td>$32.500</td>
+
+<td>
+<span class="estado agotado">
+Agotado
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../assets/js/productos.js"></script>
+
+</body>
+</html>

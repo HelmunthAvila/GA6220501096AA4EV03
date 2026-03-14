@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gestión de proveedores</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/proveedores.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html">Reportes de inventario y ventas</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html" class="active">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header>
+
+<h2>Gestión de proveedores</h2>
+
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Search">
+
+<select>
+<option>Estado</option>
+<option>Activo</option>
+<option>Inactivo</option>
+</select>
+
+<button class="nuevo">
+Nuevo proveedor
+</button>
+
+</section>
+
+<!-- TABLA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Identificación</th>
+<th>Teléfono</th>
+<th>Ciudad</th>
+<th>Dirección</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Suelas</td>
+<td>890.234.128-1</td>
+<td>300-4805049</td>
+<td>Bucaramanga</td>
+<td>Calle 45 28 38</td>
+<td>Activo</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Suelas</td>
+<td>890.234.128-1</td>
+<td>300-4805049</td>
+<td>Bucaramanga</td>
+<td>Calle 45 28 38</td>
+<td>Activo</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../assets/js/proveedores.js"></script>
+
+</body>
+</html>

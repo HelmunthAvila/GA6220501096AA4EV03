@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reportes</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/reportes.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html" class="active">Reportes de inventario y ventas</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header>
+
+<h2>Reportes de inventario y ventas</h2>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<div>
+
+<label>Tipo de reporte</label>
+
+<select>
+<option>Inventario</option>
+<option>Ventas</option>
+<option>Ambos</option>
+</select>
+
+</div>
+
+<div>
+
+<label>Rango fechas</label>
+
+<input type="date">
+<input type="date">
+
+</div>
+
+<div>
+
+<label>Formato salida</label>
+
+<select>
+<option>PDF</option>
+<option>Excel</option>
+<option>Word</option>
+</select>
+
+</div>
+
+</section>
+
+<!-- CONTENIDO -->
+
+<section class="reportes-container">
+
+<!-- TABLA -->
+
+<div class="tabla">
+
+<input type="text" placeholder="Buscar producto">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Código</th>
+<th>Nombre</th>
+<th>Categoría</th>
+<th>Stock</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>ACT001</td>
+<td>Producto A</td>
+<td>Zapatos</td>
+<td>45</td>
+</tr>
+
+<tr>
+<td>ACT002</td>
+<td>Producto B</td>
+<td>Zapatos</td>
+<td>12</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- GRAFICAS -->
+
+<div class="graficas">
+
+<canvas id="ventasMes"></canvas>
+
+<canvas id="ventasTotales"></canvas>
+
+</div>
+
+</section>
+
+<!-- BOTONES -->
+
+<div class="acciones">
+
+<button onclick="abrirModal()">Descargar reporte</button>
+<button onclick="window.print()">Imprimir</button>
+<button>Enviar por correo</button>
+
+</div>
+
+</main>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="modalReporte">
+
+<div class="modal-contenido">
+
+<h3>Descarga reporte</h3>
+
+<p>Selecciona formato y destino de tu informe</p>
+
+<div class="modal-opciones">
+
+<div>
+
+<label>Formato</label>
+
+<select>
+<option>PDF</option>
+<option>Excel</option>
+<option>Word</option>
+<option>HTML</option>
+<option>Power BI</option>
+</select>
+
+</div>
+
+<div>
+
+<label>Destino</label>
+
+<select>
+<option>Descargar en PC</option>
+<option>Enviar por correo</option>
+</select>
+
+<input type="email" placeholder="Correo electrónico">
+
+</div>
+
+</div>
+
+<div class="modal-botones">
+
+<button class="verde">Generar y descargar</button>
+<button onclick="cerrarModal()">Cancelar</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../assets/js/reportes.js"></script>
+
+</body>
+</html>

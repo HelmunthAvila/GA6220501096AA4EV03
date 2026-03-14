@@ -1,0 +1,85 @@
+.filtros{
+
+display:flex;
+gap:10px;
+margin-bottom:20px;
+
+}
+
+.filtros input,
+.filtros select{
+
+padding:10px;
+border:1px solid #ddd;
+border-radius:6px;
+
+}
+
+.guardar{
+
+margin-left:auto;
+
+background:#22c55e;
+color:white;
+
+border:none;
+padding:10px 15px;
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+.tabla{
+
+background:white;
+border-radius:10px;
+overflow:hidden;
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+th,td{
+
+padding:14px;
+border-bottom:1px solid #eee;
+
+}
+
+.estado{
+
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+
+}
+
+.normal{
+
+background:#22c55e;
+color:white;
+
+}
+
+.alerta{
+
+background:#ef4444;
+color:white;
+
+}
+
+.acciones button{
+
+border:none;
+background:none;
+cursor:pointer;
+font-size:16px;
+margin-right:5px;
+
+}

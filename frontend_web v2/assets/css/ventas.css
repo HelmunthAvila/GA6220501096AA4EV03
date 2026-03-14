@@ -1,0 +1,82 @@
+.buscador{
+
+display:flex;
+gap:10px;
+margin-bottom:20px;
+
+}
+
+.buscador input,
+.buscador select{
+
+padding:10px;
+border:1px solid #ddd;
+border-radius:6px;
+
+}
+
+.tabla{
+
+background:white;
+border-radius:10px;
+overflow:hidden;
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+th,td{
+
+padding:14px;
+border-bottom:1px solid #eee;
+
+}
+
+.acciones button{
+
+border:none;
+background:none;
+cursor:pointer;
+font-size:16px;
+
+}
+
+.totales{
+
+margin-top:20px;
+display:flex;
+gap:10px;
+
+}
+
+.totales input{
+
+padding:10px;
+border:1px solid #ddd;
+border-radius:6px;
+
+}
+
+.acciones-final{
+
+margin-top:20px;
+display:flex;
+justify-content:flex-end;
+
+}
+
+.factura{
+
+background:#22c55e;
+border:none;
+padding:12px 20px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alertas de stock mínimo</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/alertas.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html">Reportes de inventario y ventas</a>
+<a href="alertas.html" class="active">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header>
+
+<h2>Alertas de stock mínimo</h2>
+
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Search">
+
+<select>
+<option>Nombre</option>
+</select>
+
+<button class="guardar">
+Guardar configuración
+</button>
+
+</section>
+
+<!-- TABLA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Referencia</th>
+<th>Stock actual</th>
+<th>Stock mínimo</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaStock">
+
+<tr>
+
+<td>Producto A</td>
+<td>SKU0001</td>
+<td>45</td>
+<td>5</td>
+
+<td>
+<span class="estado normal">Normal</span>
+</td>
+
+<td class="acciones">
+<button onclick="ver()">👁️</button>
+<button onclick="editar()">✏️</button>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Producto B</td>
+<td>SKU0002</td>
+<td>3</td>
+<td>5</td>
+
+<td>
+<span class="estado alerta">Bajo stock</span>
+</td>
+
+<td class="acciones">
+<button onclick="ver()">👁️</button>
+<button onclick="editar()">✏️</button>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../assets/js/alertas.js"></script>
+
+</body>
+</html>

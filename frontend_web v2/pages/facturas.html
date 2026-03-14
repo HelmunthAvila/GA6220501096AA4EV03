@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Generación de facturas</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/facturas.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html" class="active">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html">Reportes</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header>
+
+<h2>Generación de facturas</h2>
+
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Search">
+
+<select>
+<option>Estado</option>
+<option>Pagado</option>
+<option>Pendiente</option>
+</select>
+
+<button class="nuevo"
+onclick="location.href='generar_factura.html'">
+Generar factura manual
+</button>
+
+</section>
+
+<!-- TABLA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Número factura</th>
+<th>Fecha de emisión</th>
+<th>Cliente</th>
+<th>Total</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>2025001</td>
+<td>06/11/2025</td>
+<td>Luis David</td>
+<td>$65.000</td>
+
+<td>
+<span class="estado pagado">
+Pagado
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2025002</td>
+<td>06/11/2025</td>
+<td>Luis David</td>
+<td>$65.000</td>
+
+<td>
+<span class="estado pendiente">
+Pendiente
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../assets/js/facturas.js"></script>
+
+</body>
+</html>

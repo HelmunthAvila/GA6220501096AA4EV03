@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gestión de usuarios - Amatista SGI</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/usuarios.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html">Búsqueda de productos</a>
+<a href="reportes.html">Reportes</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html" class="active">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header>
+
+<h2>Gestión de usuarios</h2>
+
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Buscar usuario">
+
+<select>
+<option>Estado</option>
+<option>Activo</option>
+<option>Agotado</option>
+</select>
+
+<button class="nuevo">
+Nuevo Usuario
+</button>
+
+</section>
+
+<!-- TABLA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Correo Electronico</th>
+<th>Rol</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaUsuarios">
+
+<tr>
+
+<td>Helmuth Avila</td>
+<td>helmuth@gmail.com</td>
+<td>Administrador</td>
+
+<td>
+<span class="estado activo">
+Activo
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Diana Maria</td>
+<td>dianamaria@gmail.com</td>
+<td>Vendedor</td>
+
+<td>
+<span class="estado inactivo">
+Agotado
+</span>
+</td>
+
+<td class="acciones">
+
+<button onclick="editar()">✏️</button>
+<button onclick="ver()">👁️</button>
+<button onclick="eliminar()">🗑️</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../assets/js/usuarios.js"></script>
+
+</body>
+</html>

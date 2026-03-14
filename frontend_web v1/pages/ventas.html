@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+
+<!-- Configuración básica del documento y recursos del módulo de ventas -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amatista SGI - Ventas</title>
+
 <link rel="icon" type="image/x-icon" href="img/logo.ico">
 <link rel="stylesheet" href="../css/ventas.css">
 
@@ -12,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 <aside class="sidebar">
 
 <h2>Amatista</h2>
@@ -41,15 +45,17 @@
 </aside>
 
 
-<!-- CONTENIDO -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 <main class="main-content">
 
 <h2>Registro de Ventas</h2>
 
 
-<!-- LISTA DE PRODUCTOS -->
+<!-- Contenedor que divide productos disponibles y carrito -->
 <div class="ventas-container">
 
+
+<!-- LISTA DE PRODUCTOS DISPONIBLES -->
 <div class="productos">
 
 <h3>Productos disponibles</h3>
@@ -66,6 +72,7 @@
 
 <tbody>
 
+<!-- Producto disponible para agregar a la venta -->
 <tr>
 <td>Teclado</td>
 <td>45000</td>
@@ -91,7 +98,7 @@
 </div>
 
 
-<!-- CARRITO -->
+<!-- CARRITO DE COMPRA PARA LA VENTA -->
 <div class="carrito">
 
 <h3>Carrito de venta</h3>
@@ -106,14 +113,17 @@
 </tr>
 </thead>
 
+<!-- Lista dinámica donde se agregan productos seleccionados -->
 <tbody id="listaCarrito">
 
 </tbody>
 
 </table>
 
+<!-- Total acumulado de la venta -->
 <h3>Total: $ <span id="total">0</span></h3>
 
+<!-- Botón para registrar la venta en el sistema -->
 <button onclick="registrarVenta()">Registrar venta</button>
 
 </div>
@@ -124,6 +134,7 @@
 
 </div>
 
+<!-- Script que controla la lógica del carrito y registro de ventas -->
 <script src="../js/ventas.js"></script>
 
 </body>

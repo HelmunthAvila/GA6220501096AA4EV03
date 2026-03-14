@@ -3,36 +3,42 @@
 
 <head>
 
+<!-- Configuración básica del documento y compatibilidad con dispositivos -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Login - Amatista</title>
+
+<!-- Recursos del sistema: icono, estilos y archivo JavaScript -->
 <link rel="icon" type="image/x-icon" href="img/logo.ico">
 <link rel="stylesheet" href="css/mobile.css">
 <link rel="stylesheet" href="css/responsive.css">
-
 <script src="js/mobile.js"></script>
 
 </head>
 
 <body>
 
+<!-- Contenedor principal que centra el módulo de autenticación -->
 <div class="login-container">
 
+<!-- Caja del formulario de inicio de sesión -->
 <div class="login-box">
 
+<!-- Identidad visual del sistema -->
 <img src="img/logo.png" class="logo">
 
 <h2>Bienvenido</h2>
-
 <p class="subtitle">Ingresa tus credenciales para continuar</p>
 
+<!-- Campos de autenticación del usuario -->
 <input type="text" placeholder="Usuario" class="input">
-
 <input type="password" placeholder="Contraseña" class="input">
 
+<!-- Opción de recuperación de contraseña -->
 <p class="recover">¿Olvidaste tu contraseña?</p>
 
+<!-- Botón que ejecuta la función login() en JavaScript -->
 <button class="btn-login" onclick="login()">Ingresar</button>
 
 </div>
@@ -40,5 +46,4 @@
 </div>
 
 </body>
-
 </html>

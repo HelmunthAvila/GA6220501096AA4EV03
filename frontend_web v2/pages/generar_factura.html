@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y estilos del módulo de facturación -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del proceso de facturación -->
 <h2>Gestión de ventas / Generar factura</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -65,7 +70,7 @@
 
 <section class="factura-container">
 
-<!-- CLIENTE -->
+<!-- FORMULARIO DE DATOS DEL CLIENTE -->
 
 <div class="cliente">
 
@@ -78,12 +83,13 @@
 
 <textarea placeholder="Observación"></textarea>
 
+<!-- Botón para registrar un cliente nuevo -->
 <button class="btn">Registrar Cliente</button>
 
 </div>
 
 
-<!-- ITEMS -->
+<!-- TABLA DE PRODUCTOS A FACTURAR -->
 
 <div class="items">
 
@@ -106,6 +112,7 @@
 
 <tbody id="tablaFactura">
 
+<!-- Producto agregado a la factura -->
 <tr>
 
 <td>Producto A</td>
@@ -120,6 +127,7 @@
 
 </tr>
 
+<!-- Segundo producto agregado -->
 <tr>
 
 <td>Producto B</td>
@@ -138,7 +146,7 @@
 
 </table>
 
-<!-- TOTALES -->
+<!-- CÁLCULO DE TOTALES DE LA FACTURA -->
 
 <div class="totales">
 
@@ -148,7 +156,7 @@
 
 </div>
 
-<!-- METODO PAGO -->
+<!-- MÉTODO DE PAGO DE LA FACTURA -->
 
 <div class="pago">
 
@@ -168,8 +176,10 @@ Crédito
 
 </div>
 
+<!-- Observaciones adicionales de la factura -->
 <textarea placeholder="Observación"></textarea>
 
+<!-- Botón para generar e imprimir la factura -->
 <button class="btn factura">
 Generar e imprimir factura
 </button>
@@ -182,6 +192,7 @@ Generar e imprimir factura
 
 </div>
 
+<!-- Script que controla la lógica de cálculo y generación de factura -->
 <script src="../assets/js/factura.js"></script>
 
 </body>

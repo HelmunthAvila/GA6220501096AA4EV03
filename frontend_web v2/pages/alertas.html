@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y hojas de estilo del módulo -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Alertas de stock mínimo</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS DE BÚSQUEDA Y CONFIGURACIÓN -->
 
 <section class="filtros">
 
@@ -79,7 +84,7 @@ Guardar configuración
 
 </section>
 
-<!-- TABLA -->
+<!-- TABLA DE PRODUCTOS CON ALERTA DE STOCK -->
 
 <section class="tabla">
 
@@ -100,6 +105,7 @@ Guardar configuración
 
 <tbody id="tablaStock">
 
+<!-- Producto con stock normal -->
 <tr>
 
 <td>Producto A</td>
@@ -118,6 +124,7 @@ Guardar configuración
 
 </tr>
 
+<!-- Producto con alerta de stock bajo -->
 <tr>
 
 <td>Producto B</td>
@@ -146,6 +153,7 @@ Guardar configuración
 
 </div>
 
+<!-- Script que controla la lógica del módulo de alertas -->
 <script src="../assets/js/alertas.js"></script>
 
 </body>

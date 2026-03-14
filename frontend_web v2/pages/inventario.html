@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y hojas de estilo del módulo -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Control de inventario</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS DE BÚSQUEDA Y ACCIONES -->
 
 <section class="filtros">
 
@@ -73,6 +78,7 @@
 <option>Nombre</option>
 </select>
 
+<!-- Botón para registrar entradas o salidas de inventario -->
 <button class="nuevo"
 onclick="location.href='movimiento.html'">
 Registrar movimiento
@@ -80,7 +86,7 @@ Registrar movimiento
 
 </section>
 
-<!-- TABLA INVENTARIO -->
+<!-- TABLA DE PRODUCTOS EN INVENTARIO -->
 
 <section class="tabla">
 
@@ -101,6 +107,7 @@ Registrar movimiento
 
 <tbody>
 
+<!-- Producto con stock normal -->
 <tr>
 
 <td>Producto A</td>
@@ -122,6 +129,7 @@ Registrar movimiento
 
 </tr>
 
+<!-- Producto con alerta de inventario -->
 <tr>
 
 <td>Producto B</td>
@@ -153,6 +161,7 @@ Registrar movimiento
 
 </div>
 
+<!-- Script que controla la lógica del módulo de inventario -->
 <script src="../assets/js/inventario.js"></script>
 
 </body>

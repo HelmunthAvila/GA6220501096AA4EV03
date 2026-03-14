@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y estilos del módulo de usuarios -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Gestión de usuarios</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS DE BÚSQUEDA Y CREACIÓN DE USUARIOS -->
 
 <section class="filtros">
 
@@ -75,13 +80,14 @@
 <option>Agotado</option>
 </select>
 
+<!-- Botón para registrar un nuevo usuario -->
 <button class="nuevo">
 Nuevo Usuario
 </button>
 
 </section>
 
-<!-- TABLA -->
+<!-- TABLA DE USUARIOS REGISTRADOS -->
 
 <section class="tabla">
 
@@ -101,6 +107,7 @@ Nuevo Usuario
 
 <tbody id="tablaUsuarios">
 
+<!-- Usuario administrador -->
 <tr>
 
 <td>Helmuth Avila</td>
@@ -123,6 +130,7 @@ Activo
 
 </tr>
 
+<!-- Usuario vendedor -->
 <tr>
 
 <td>Diana Maria</td>
@@ -155,6 +163,7 @@ Agotado
 
 </div>
 
+<!-- Script que controla la lógica del módulo de usuarios -->
 <script src="../assets/js/usuarios.js"></script>
 
 </body>

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento, estilos y librería para gráficas -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,15 +11,17 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/reportes.css">
 
+<!-- Librería Chart.js para generar gráficas estadísticas -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
 
+<!-- Contenedor principal del layout -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DEL SISTEMA -->
 
 <aside class="sidebar">
 
@@ -27,6 +30,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -44,17 +48,18 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Reportes de inventario y ventas</h2>
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS PARA GENERAR REPORTES -->
 
 <section class="filtros">
 
@@ -93,11 +98,11 @@
 
 </section>
 
-<!-- CONTENIDO -->
+<!-- CONTENIDO DEL REPORTE -->
 
 <section class="reportes-container">
 
-<!-- TABLA -->
+<!-- TABLA DE DATOS DEL REPORTE -->
 
 <div class="tabla">
 
@@ -138,7 +143,7 @@
 
 </div>
 
-<!-- GRAFICAS -->
+<!-- GRÁFICAS ESTADÍSTICAS DE LOS REPORTES -->
 
 <div class="graficas">
 
@@ -150,7 +155,7 @@
 
 </section>
 
-<!-- BOTONES -->
+<!-- BOTONES DE ACCIÓN DEL REPORTE -->
 
 <div class="acciones">
 
@@ -164,7 +169,7 @@
 
 </div>
 
-<!-- MODAL -->
+<!-- VENTANA MODAL PARA CONFIGURAR DESCARGA DEL REPORTE -->
 
 <div class="modal" id="modalReporte">
 
@@ -216,6 +221,7 @@
 
 </div>
 
+<!-- Script que controla la lógica de generación de reportes -->
 <script src="../assets/js/reportes.js"></script>
 
 </body>

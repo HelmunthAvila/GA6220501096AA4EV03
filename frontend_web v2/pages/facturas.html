@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y hojas de estilo del módulo -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Generación de facturas</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS DE BÚSQUEDA Y CREACIÓN DE FACTURAS -->
 
 <section class="filtros">
 
@@ -75,6 +80,7 @@
 <option>Pendiente</option>
 </select>
 
+<!-- Botón para crear una nueva factura manual -->
 <button class="nuevo"
 onclick="location.href='generar_factura.html'">
 Generar factura manual
@@ -82,7 +88,7 @@ Generar factura manual
 
 </section>
 
-<!-- TABLA -->
+<!-- TABLA DE FACTURAS REGISTRADAS -->
 
 <section class="tabla">
 
@@ -103,6 +109,7 @@ Generar factura manual
 
 <tbody>
 
+<!-- Registro de factura pagada -->
 <tr>
 
 <td>2025001</td>
@@ -126,6 +133,7 @@ Pagado
 
 </tr>
 
+<!-- Registro de factura pendiente -->
 <tr>
 
 <td>2025002</td>
@@ -159,6 +167,7 @@ Pendiente
 
 </div>
 
+<!-- Script que controla la lógica del módulo de facturación -->
 <script src="../assets/js/facturas.js"></script>
 
 </body>

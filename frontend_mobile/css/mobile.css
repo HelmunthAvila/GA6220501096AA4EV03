@@ -1,4 +1,4 @@
-/* RESET GENERAL */
+/* RESET GENERAL: elimina márgenes y configura tipografía base */
 
 *{
 margin:0;
@@ -13,7 +13,7 @@ padding-bottom:90px;
 color:#333;
 }
 
-/* HEADER */
+/* HEADER: estructura visual del encabezado del sistema */
 
 .header{
 padding:15px;
@@ -38,7 +38,7 @@ font-size:14px;
 color:#555;
 }
 
-/* DIVIDER */
+/* DIVIDER: línea separadora entre secciones */
 
 .divider{
 height:1px;
@@ -46,7 +46,7 @@ background:#d6d6d6;
 margin:10px 0;
 }
 
-/* DASHBOARD */
+/* DASHBOARD: diseño de tarjetas del panel principal */
 
 .dashboard{
 display:grid;
@@ -85,7 +85,7 @@ margin-bottom:8px;
 border:2px solid #cfcfcf;
 }
 
-/* BUSCADOR */
+/* BUSCADOR: estilos del campo de búsqueda y filtros */
 
 .search-container{
 display:flex;
@@ -108,7 +108,7 @@ border:1px solid #ccc;
 font-size:14px;
 }
 
-/* LISTA GENERAL */
+/* LISTA GENERAL: contenedor de registros como productos, clientes o ventas */
 
 .list-container{
 display:flex;
@@ -117,7 +117,7 @@ gap:10px;
 padding:10px 15px;
 }
 
-/* TARJETAS DE REGISTRO */
+/* TARJETAS DE REGISTRO: diseño de cada elemento listado */
 
 .user-card{
 background:#dcdcdc;
@@ -133,7 +133,7 @@ font-size:14px;
 line-height:1.4;
 }
 
-/* ACCIONES */
+/* ACCIONES: botones de editar, ver y eliminar */
 
 .actions{
 display:flex;
@@ -150,7 +150,7 @@ cursor:pointer;
 font-size:14px;
 }
 
-/* BOTÓN PRINCIPAL */
+/* BOTÓN PRINCIPAL: botón de acción principal del módulo */
 
 .button-container{
 padding:15px;
@@ -172,7 +172,7 @@ cursor:pointer;
 background:#28a964;
 }
 
-/* MENÚ INFERIOR */
+/* MENÚ INFERIOR: navegación fija entre módulos del sistema */
 
 .bottom-nav{
 position:fixed;
@@ -199,14 +199,14 @@ align-items:center;
 font-size:18px;
 }
 
-/* ESTADO ACTIVO DEL MENÚ */
+/* ESTADO ACTIVO: resalta el módulo actual en el menú */
 
 .bottom-nav a.active{
 color:#2fbf71;
 font-weight:bold;
 }
 
-/* BOTONES ICONOS */
+/* EFECTO HOVER: animación al pasar el mouse sobre botones */
 
 button{
 transition:0.2s;
@@ -215,6 +215,8 @@ transition:0.2s;
 button:hover{
 opacity:0.8;
 }
+
+/* RESUMEN DE VENTA: bloque que muestra totales de una venta */
 
 .resumen-venta{
 background:#dcdcdc;

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y estilos del módulo de ventas -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- MAIN -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Gestión de ventas</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- BUSCADOR -->
+<!-- BUSCADOR DE CLIENTES O PRODUCTOS -->
 
 <section class="buscador">
 
@@ -75,7 +80,7 @@
 
 </section>
 
-<!-- TABLA VENTAS -->
+<!-- TABLA DE PRODUCTOS AGREGADOS A LA VENTA -->
 
 <section class="tabla">
 
@@ -96,6 +101,7 @@
 
 <tbody id="tablaVentas">
 
+<!-- Producto agregado a la venta -->
 <tr>
 
 <td>Producto A</td>
@@ -112,6 +118,7 @@
 
 </tr>
 
+<!-- Segundo producto agregado -->
 <tr>
 
 <td>Producto B</td>
@@ -134,7 +141,7 @@
 
 </section>
 
-<!-- TOTALES -->
+<!-- SECCIÓN DE CÁLCULO DE TOTALES -->
 
 <section class="totales">
 
@@ -144,6 +151,8 @@
 <input type="text" id="total" placeholder="Total a pagar" readonly>
 
 </section>
+
+<!-- ACCIÓN FINAL PARA GENERAR FACTURA -->
 
 <div class="acciones-final">
 
@@ -158,6 +167,7 @@ Generar factura
 
 </div>
 
+<!-- Script que controla la lógica del módulo de ventas -->
 <script src="../assets/js/ventas.js"></script>
 
 </body>

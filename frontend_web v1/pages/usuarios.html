@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+
+<!-- Configuración básica del documento y recursos del módulo de usuarios -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amatista SGI - Usuarios</title>
+
 <link rel="icon" type="image/x-icon" href="img/logo.ico">
 <link rel="stylesheet" href="../css/usuarios.css">
 
@@ -12,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 <aside class="sidebar">
 
 <h2>Amatista</h2>
@@ -33,7 +37,7 @@
 <!-- Reportes: análisis y estadísticas -->
 <li><a href="reportes.html">Reportes</a></li>
 
-<!-- Usuarios: administración de usuarios -->
+<!-- Usuarios: administración de cuentas del sistema -->
 <li class="active"><a href="usuarios.html">Usuarios</a></li>
 
 </ul>
@@ -41,13 +45,14 @@
 </aside>
 
 
-<!-- CONTENIDO -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 <main class="main-content">
 
 <header class="topbar">
 
 <h2>Gestión de Usuarios</h2>
 
+<!-- Buscador y botón para registrar nuevos usuarios -->
 <div>
 
 <input type="text" id="buscarUsuario" placeholder="Buscar usuario">
@@ -59,7 +64,7 @@
 </header>
 
 
-<!-- TABLA -->
+<!-- Tabla donde se listan los usuarios registrados -->
 <table>
 
 <thead>
@@ -76,6 +81,7 @@
 
 <tbody id="tablaUsuarios">
 
+<!-- Usuario administrador -->
 <tr>
 <td>1</td>
 <td>Helmunth Avila</td>
@@ -87,6 +93,7 @@
 </td>
 </tr>
 
+<!-- Usuario vendedor -->
 <tr>
 <td>2</td>
 <td>Maria Perez</td>
@@ -106,6 +113,7 @@
 
 </div>
 
+<!-- Script que controla la lógica del módulo de usuarios -->
 <script src="../js/usuarios.js"></script>
 
 </body>

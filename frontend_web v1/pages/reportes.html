@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+
+<!-- Configuración básica del documento y recursos del módulo de reportes -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amatista SGI - Reportes</title>
+
 <link rel="icon" type="image/x-icon" href="img/logo.ico">
 <link rel="stylesheet" href="../css/reportes.css">
 
@@ -12,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 <aside class="sidebar">
 
 <h2>Amatista</h2>
@@ -30,10 +34,10 @@
 <!-- Ventas: registro de ventas -->
 <li><a href="ventas.html">Ventas</a></li>
 
-<!-- Reportes: análisis y estadísticas -->
+<!-- Reportes: análisis de información y estadísticas -->
 <li class="active"><a href="reportes.html">Reportes</a></li>
 
-<!-- Usuarios: administración de usuarios -->
+<!-- Usuarios: administración de usuarios del sistema -->
 <li><a href="usuarios.html">Usuarios</a></li>
 
 </ul>
@@ -41,13 +45,12 @@
 </aside>
 
 
-<!-- CONTENIDO -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 <main class="main-content">
 
 <h2>Panel de Reportes</h2>
 
-
-<!-- INDICADORES -->
+<!-- Indicadores principales del sistema -->
 <section class="indicadores">
 
 <div class="card">
@@ -73,7 +76,7 @@
 </section>
 
 
-<!-- GRAFICAS -->
+<!-- Gráficas estadísticas del sistema -->
 <section class="graficas">
 
 <div class="grafica">
@@ -92,7 +95,10 @@
 
 </div>
 
+<!-- Librería para generar gráficas dinámicas -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Script que controla la lógica y datos de los reportes -->
 <script src="../js/reportes.js"></script>
 
 </body>

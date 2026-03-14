@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
+<!-- Configuración básica del documento y adaptación a dispositivos móviles -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Gestión de ventas</title>
+
+<!-- Recursos del sistema: icono y estilos de la interfaz -->
 <link rel="icon" type="image/x-icon" href="../img/logo.ico">
 <link rel="stylesheet" href="../css/mobile.css">
 
@@ -15,6 +17,7 @@
 
 <body>
 
+<!-- Encabezado del módulo con logo e información del usuario -->
 <header class="header">
 
 <div class="logo-area">
@@ -31,6 +34,7 @@
 
 </header>
 
+<!-- Área de búsqueda y filtro de productos vendidos -->
 <div class="search-container">
 
 <input type="text" placeholder="Search Cliente">
@@ -43,10 +47,10 @@
 
 </div>
 
+<!-- Contenedor principal donde se listan los productos de la venta -->
 <main class="list-container">
 
-<!-- ITEM VENTA -->
-
+<!-- Tarjeta que muestra la información de un producto vendido -->
 <div class="user-card">
 
 <div class="user-info">
@@ -57,6 +61,7 @@
 <p><strong>Subtotal</strong> $64.000</p>
 </div>
 
+<!-- Acciones disponibles para administrar el ítem de la venta -->
 <div class="actions">
 <button>✏️</button>
 <button>👁</button>
@@ -65,6 +70,7 @@
 
 </div>
 
+<!-- Segundo producto incluido en la venta -->
 <div class="user-card">
 
 <div class="user-info">
@@ -85,8 +91,7 @@
 
 </main>
 
-<!-- RESUMEN DE VENTA -->
-
+<!-- Resumen de la venta con cálculos de descuento, impuestos y total -->
 <div class="resumen-venta">
 
 <div class="linea">
@@ -106,6 +111,7 @@
 
 </div>
 
+<!-- Botón para generar la factura de la venta -->
 <div class="button-container">
 
 <button class="btn-primary">
@@ -114,6 +120,7 @@ Generar factura
 
 </div>
 
+<!-- Menú de navegación inferior para acceder a los módulos principales -->
 <nav class="bottom-nav">
 
 <a href="dashboard.html">

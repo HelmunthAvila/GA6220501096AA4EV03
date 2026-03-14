@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y estilos del formulario -->
 <meta charset="UTF-8">
 
 <title>Registrar Movimiento</title>
@@ -13,7 +14,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout -->
 <div class="container">
+
+<!-- MENÚ LATERAL DEL SISTEMA -->
 
 <aside class="sidebar">
 
@@ -24,23 +28,30 @@
 
 </aside>
 
+<!-- CONTENIDO PRINCIPAL -->
+
 <main class="main">
 
+<!-- Título del formulario -->
 <h2>Registrar Movimiento</h2>
 
+<!-- Formulario para registrar movimientos de inventario -->
 <form class="form-mov">
 
+<!-- Selección del producto -->
 <label>Nombre</label>
 <select>
 <option>Producto A</option>
 <option>Producto B</option>
 </select>
 
+<!-- Selección de referencia del producto -->
 <label>Referencia</label>
 <select>
 <option>SKU0001</option>
 </select>
 
+<!-- Tipo de movimiento que afecta el inventario -->
 <label>Tipo de Movimiento</label>
 
 <div class="tipo">
@@ -57,15 +68,19 @@ Corrección (Manual)
 
 </div>
 
+<!-- Cantidad de productos que se modificará -->
 <label>Cantidad</label>
 <input type="number">
 
+<!-- Fecha en que se registra el movimiento -->
 <label>Fecha</label>
 <input type="date">
 
+<!-- Observaciones del movimiento -->
 <label>Descripción</label>
 <textarea></textarea>
 
+<!-- Botones de acción del formulario -->
 <div class="botones">
 
 <button type="submit" class="guardar">

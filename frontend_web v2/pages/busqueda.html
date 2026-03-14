@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Configuración básica del documento y estilos del módulo -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Búsqueda de productos</title>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/busqueda.css">
+
+</head>
+
+<body>
+
+<!-- Contenedor principal del sistema -->
+<div class="container">
+
+<!-- SIDEBAR DE NAVEGACIÓN -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h2>Amatista</h2>
+<span>Shoes</span>
+</div>
+
+<!-- Navegación entre los módulos -->
+<nav>
+
+<a href="productos.html">Gestión de productos</a>
+<a href="inventario.html">Control de inventario</a>
+<a href="ventas.html">Gestión de ventas</a>
+<a href="facturas.html">Generación de facturas</a>
+<a href="busqueda.html" class="active">Búsqueda de productos</a>
+<a href="reportes.html">Reportes</a>
+<a href="alertas.html">Alertas de stock mínimo</a>
+<a href="proveedores.html">Gestión de proveedores</a>
+<a href="clientes.html">Registro de clientes</a>
+<a href="usuarios.html">Gestión de usuarios</a>
+
+</nav>
+
+</aside>
+
+<!-- CONTENIDO PRINCIPAL -->
+
+<main class="main">
+
+<header>
+
+<!-- Título del módulo -->
+<h2>Búsqueda de productos</h2>
+
+<!-- Información del usuario -->
+<div class="user">
+
+<div class="avatar"></div>
+
+<div>
+<strong>Helmuth Avila</strong>
+<p>Administrador</p>
+</div>
+
+</div>
+
+</header>
+
+<!-- FILTROS DE BÚSQUEDA -->
+
+<section class="filtros">
+
+<input type="text" placeholder="Buscar producto">
+
+<select>
+<option>Nombre</option>
+<option>Referencia</option>
+<option>Categoría</option>
+</select>
+
+<button class="buscar">
+Buscar
+</button>
+
+</section>
+
+<!-- RESULTADOS DE LA BÚSQUEDA -->
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Referencia</th>
+<th>Categoría</th>
+<th>Stock</th>
+<th>Precio</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaBusqueda">
+
+<!-- Resultado de producto encontrado -->
+<tr>
+
+<td>Producto A</td>
+<td>SKU0001</td>
+<td>Zapatos</td>
+<td>45</td>
+<td>$32.500</td>
+
+<td class="acciones">
+<button onclick="ver()">👁️</button>
+<button onclick="editar()">✏️</button>
+</td>
+
+</tr>
+
+<!-- Segundo resultado -->
+<tr>
+
+<td>Producto B</td>
+<td>SKU0002</td>
+<td>Zapatos</td>
+<td>12</td>
+<td>$28.000</td>
+
+<td class="acciones">
+<button onclick="ver()">👁️</button>
+<button onclick="editar()">✏️</button>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<!-- Script que controla la lógica de búsqueda -->
+<script src="../assets/js/busqueda.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
+<!-- Configuración básica del documento y recursos visuales del login -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,36 +15,44 @@
 
 <body>
 
+<!-- Contenedor principal de la pantalla de inicio de sesión -->
 <div class="login-container">
 
+    <!-- Tarjeta central donde se muestra el formulario de autenticación -->
     <div class="login-card">
 
+        <!-- Identidad visual del sistema -->
         <div class="logo">
             <img src="assets/img/logo.png" alt="Amatista">
             <h2>Amatista</h2>
             <span>Shoes</span>
         </div>
 
+        <!-- Mensaje de bienvenida -->
         <h3>Bienvenido</h3>
 
         <p class="subtitle">
             Ingresa tus credenciales para continuar
         </p>
 
+        <!-- Formulario de autenticación del usuario -->
         <form id="loginForm">
 
+            <!-- Campo de usuario -->
             <input 
             type="text" 
             id="usuario" 
             placeholder="Usuario"
             required>
 
+            <!-- Campo de contraseña -->
             <input 
             type="password" 
             id="password" 
             placeholder="Contraseña"
             required>
 
+            <!-- Opciones adicionales del login -->
             <div class="options">
 
                 <label>
@@ -54,6 +64,7 @@
 
             </div>
 
+            <!-- Botón para enviar el formulario -->
             <button type="submit">
                 Ingresar
             </button>
@@ -64,6 +75,7 @@
 
 </div>
 
+<!-- Script que controla la validación y lógica del login -->
 <script src="assets/js/login.js"></script>
 
 </body>

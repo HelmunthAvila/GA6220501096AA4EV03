@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 
+<!-- Configuración básica del documento y estilos del módulo de productos -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +15,10 @@
 
 <body>
 
+<!-- Contenedor principal del layout del sistema -->
 <div class="container">
 
-<!-- SIDEBAR -->
+<!-- MENÚ LATERAL DE NAVEGACIÓN -->
 
 <aside class="sidebar">
 
@@ -25,6 +27,7 @@
 <span>Shoes</span>
 </div>
 
+<!-- Navegación entre los módulos del sistema -->
 <nav>
 
 <a href="productos.html" class="active">Gestión de productos</a>
@@ -42,14 +45,16 @@
 
 </aside>
 
-<!-- CONTENIDO -->
+<!-- CONTENIDO PRINCIPAL DEL MÓDULO -->
 
 <main class="main">
 
 <header>
 
+<!-- Título del módulo -->
 <h2>Gestión de productos</h2>
 
+<!-- Información del usuario autenticado -->
 <div class="user">
 
 <div class="avatar"></div>
@@ -63,7 +68,7 @@
 
 </header>
 
-<!-- FILTROS -->
+<!-- FILTROS DE BÚSQUEDA Y CREACIÓN DE PRODUCTOS -->
 
 <section class="filtros">
 
@@ -75,11 +80,12 @@
 <option>Agotado</option>
 </select>
 
+<!-- Botón para registrar un nuevo producto -->
 <button class="nuevo">Nuevo Producto</button>
 
 </section>
 
-<!-- TABLA -->
+<!-- TABLA DE PRODUCTOS REGISTRADOS -->
 
 <section class="tabla">
 
@@ -100,6 +106,7 @@
 
 <tbody>
 
+<!-- Producto con stock disponible -->
 <tr>
 <td>Producto A</td>
 <td>SKU0001</td>
@@ -122,6 +129,7 @@ Activo
 
 </tr>
 
+<!-- Producto agotado -->
 <tr>
 <td>Producto B</td>
 <td>SKU0002</td>
@@ -154,6 +162,7 @@ Agotado
 
 </div>
 
+<!-- Script que controla la lógica del módulo de productos -->
 <script src="../assets/js/productos.js"></script>
 
 </body>

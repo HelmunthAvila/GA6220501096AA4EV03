@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
+<!-- Configuración básica del documento y adaptación a dispositivos móviles -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Gestión de usuarios</title>
+
+<!-- Recursos del sistema: icono y hoja de estilos -->
 <link rel="icon" type="image/x-icon" href="../img/logo.ico">
 <link rel="stylesheet" href="../css/mobile.css">
 
@@ -15,6 +17,7 @@
 
 <body>
 
+<!-- Encabezado del módulo con logo e información del usuario autenticado -->
 <header class="header">
 
 <div class="logo-area">
@@ -31,6 +34,7 @@
 
 </header>
 
+<!-- Área de búsqueda y filtrado de usuarios -->
 <div class="search-container">
 
 <input type="text" placeholder="Buscar usuario">
@@ -43,8 +47,10 @@
 
 </div>
 
+<!-- Contenedor principal donde se listan los usuarios del sistema -->
 <main class="list-container">
 
+<!-- Tarjeta con información de un usuario -->
 <div class="user-card">
 
 <div class="user-info">
@@ -54,6 +60,7 @@
 <p><strong>Estado</strong> Activo</p>
 </div>
 
+<!-- Acciones disponibles para administrar el usuario -->
 <div class="actions">
 <button>✏️</button>
 <button>👁</button>
@@ -62,6 +69,7 @@
 
 </div>
 
+<!-- Segundo usuario registrado -->
 <div class="user-card">
 
 <div class="user-info">
@@ -81,10 +89,12 @@
 
 </main>
 
+<!-- Botón para registrar un nuevo usuario -->
 <div class="button-container">
 <button class="btn-primary">Nuevo Usuario</button>
 </div>
 
+<!-- Menú de navegación inferior para acceder a los módulos principales -->
 <nav class="bottom-nav">
 
 <a href="dashboard.html">

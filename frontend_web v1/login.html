@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
+<!-- Configuración básica del documento y recursos del login -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amatista SGI - Login</title>
+
+<!-- Recursos visuales del sistema -->
 <link rel="icon" type="image/x-icon" href="img/logo.ico">
 <link rel="stylesheet" href="css/login.css">
 
@@ -11,14 +16,16 @@
 
 <body>
 
+<!-- Contenedor principal de la pantalla de inicio de sesión -->
 <div class="container">
 
-    <!-- PANEL LOGIN -->
+    <!-- Panel del formulario de autenticación -->
     <div class="login-box">
 
         <h2>Amatista</h2>
         <p>Bienvenido</p>
 
+        <!-- Formulario de ingreso al sistema -->
         <form id="loginForm">
 
             <input type="text" placeholder="Usuario" required>
@@ -31,27 +38,26 @@
 
     </div>
 
-
-    <!-- INFORMACION DEL SISTEMA -->
+    <!-- Panel informativo con descripción de módulos del sistema -->
     <div class="info-box">
 
         <h3>Información del sistema</h3>
 
         <ul>
 
-            <!-- Dashboard: muestra indicadores generales del sistema como ventas, inventario y actividad reciente -->
+            <!-- Dashboard: muestra indicadores generales del sistema -->
             <li><strong>Dashboard:</strong> visualización general del estado del sistema.</li>
 
-            <!-- Inventario: permite registrar, consultar y actualizar los productos disponibles -->
+            <!-- Inventario: gestión de productos y control de stock -->
             <li><strong>Inventario:</strong> gestión de productos y control de stock.</li>
 
-            <!-- Ventas: permite registrar transacciones comerciales realizadas en el sistema -->
+            <!-- Ventas: registro de transacciones comerciales -->
             <li><strong>Ventas:</strong> registro y control de ventas realizadas.</li>
 
-            <!-- Reportes: genera estadísticas y gráficos para análisis de información -->
+            <!-- Reportes: generación de estadísticas y análisis de información -->
             <li><strong>Reportes:</strong> generación de reportes y estadísticas del sistema.</li>
 
-            <!-- Usuarios: permite administrar los usuarios que pueden acceder al sistema -->
+            <!-- Usuarios: administración de acceso y roles del sistema -->
             <li><strong>Usuarios:</strong> administración de usuarios y roles.</li>
 
         </ul>
@@ -60,6 +66,7 @@
 
 </div>
 
+<!-- Script que controla la validación del login -->
 <script src="js/login.js"></script>
 
 </body>
